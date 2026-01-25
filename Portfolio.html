@@ -1,91 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer Resume</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uday Teja | Aspiring Web Developer</title>
 
-  <body>
-    <h1 id="title">Developer Resume</h1>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <p id="description">
-      A simple HTML resume focused on structure, clarity, and software
-      development skills.
-    </p>
-    
-    <main id="resume">
-      <section>
-        <h2>Personal Information</h2>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Uday Teja</h1>
+      <p class="subtitle">Aspiring Web Developer learning Machine Learning</p>
 
-        <p><strong>Name:</strong> N Uday Teja </p>
-        <p><strong>Email:</strong> Udayteja513@gmail.com</p>
-        <p><strong>Location:</strong> Hyderabad ,India </p>
-        <p><strong>Role:</strong> Junior Software  developer / Web Developer</p>
-      </section>
+      <nav aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-      <section>
-        <h2>Professional Summary</h2>
-
+    <main>
+      <section class="about">
+        <h2>About</h2>
         <p>
-          Junior developer with hands on experience using core web and
-          programming technologies to build structured, maintainable, and
-          functional applications. Strong focus on fundamentals and practical
-          problem-solving.
+          Aspiring web developer focused on building clean, accessible, and
+          well-structured web interfaces using HTML, CSS, and JavaScript.
+          Currently exploring machine learning fundamentals through
+          educational projects.
+        </p>
+        <p>
+          All projects are created strictly for learning and demonstration
+          purposes.
         </p>
       </section>
 
-      <section>
-        <h2>Technical Skills</h2>
-
-        <ul>
-          <li>HTML5 — semantic markup, forms, accessibility basics</li>
-          <li>CSS3 — layout fundamentals, responsive design</li>
-          <li>JavaScript — core language, DOM manipulation</li>
-          <li>Java — core language fundamentals, object-oriented programming</li>
-          <li>Git — version control fundamentals</li>
-          <li>GitHub — repositories and collaboration workflows</li>
-          <li>SQL — basic queries and data handling</li>
-          <li>REST APIs — consuming APIs and handling JSON data</li>
-          <li>AWS — basic cloud concepts and simple deployments</li>
-        </ul>
-      </section>
-      
-      <section>
+      <section id="projects">
         <h2>Projects</h2>
 
-        <article>
-          <h3>Developer Experience Survey</h3>
+        <article class="card project">
+          <h3>Personal Portfolio Website</h3>
           <p>
-            An HTML-based survey form designed to collect user input using
-            semantic elements and built-in browser validation.
+            A responsive portfolio website built using core web technologies
+            to present projects and skills in a clear, structured manner.
           </p>
-
           <ul>
-            <li>Implemented accessible form controls with proper labels</li>
-            <li>Used HTML validation attributes instead of JavaScript</li>
-            <li>Focused on clean, readable, maintainable markup</li>
+            <li>Semantic HTML structure</li>
+            <li>Responsive layout using CSS</li>
+            <li>Basic interactivity using JavaScript</li>
           </ul>
+          <p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a> |
+            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+          </p>
+        </article>
+
+        <article class="card project">
+          <h3>Alzheimer’s Disease Prediction Demo</h3>
+          <p>
+            An educational machine learning project exploring how
+            classification models can be trained using publicly available
+            Alzheimer’s datasets.
+          </p>
+          <ul>
+            <li>Data preprocessing using Python</li>
+            <li>Model training and evaluation</li>
+            <li>Focus on learning ML fundamentals</li>
+          </ul>
+          <p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Project Demo</a> |
+            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+          </p>
+        </article>
+
+        <article class="card project">
+          <h3>Medical Information Chatbot</h3>
+          <p>
+            An educational chatbot designed to provide general medical
+            information using predefined data and basic NLP techniques.
+          </p>
+          <ul>
+            <li>Rule-based chatbot logic</li>
+            <li>Basic natural language processing concepts</li>
+            <li>Focus on safe, non-diagnostic information</li>
+          </ul>
+          <p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Project Demo</a> |
+            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+          </p>
         </article>
       </section>
 
-      <section>
-        <h2>Education</h2>
+      <section id="skills">
+        <h2>Technical Skills</h2>
 
-        <p>
-          Self-taught software and web development through online resources and
-          hands on projects.
-        </p>
+        <h3>Frontend</h3>
+        <ul class="skills">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (DOM manipulation)</li>
+          <li>Git & GitHub</li>
+        </ul>
+
+        <h3>Backend & Data (Foundational)</h3>
+        <ul class="skills">
+          <li>Python scripting and data handling</li>
+          <li>Machine learning fundamentals</li>
+          <li>Data analysis using Pandas</li>
+        </ul>
       </section>
 
-      <section>
-        <h2>Additional Information</h2>
-
+      <section id="contact">
+        <h2>Contact</h2>
         <p>
-          Values strong fundamentals, clear code, and steady improvement over
-          unnecessary complexity or theory/features.
+          Email:
+          <a href="mailto:Udayteja513@gmail.com">Udayteja513@gmail.com</a>
         </p>
+        <p>Location: Hyderabad, India</p>
       </section>
     </main>
-  </body>
+
+    <footer>
+      <p>© Uday Teja</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript (loaded last, non-blocking) -->
+  <script src="script.js"></script>
+</body>
 </html>
