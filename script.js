@@ -12,9 +12,7 @@ const state = {
 ====================== */
 const roles = [
   "Frontend Developer",
-  "JavaScript Engineer",
   "Python & ML Learner",
-  "UI Builder"
 ];
 
 const typingEl = document.getElementById("typing");
