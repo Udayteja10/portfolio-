@@ -1,133 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uday Teja | Aspiring Web Developer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uday Teja | Frontend Developer</title>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-<body>
-  <div class="container">
-    <header class="header">
-      <h1>Uday Teja</h1>
-      <p class="subtitle">Aspiring Web Developer learning Machine Learning</p>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Uday Teja</div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-      <nav aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <!-- RESUME LINK -->
+        <a href="resume.pdf" download class="resume-btn">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </a>
       </nav>
     </header>
 
-    <main>
-      <section class="about">
-        <h2>About</h2>
-        <p>
-          Aspiring web developer focused on building clean, accessible, and
-          well-structured web interfaces using HTML, CSS, and JavaScript.
-          Currently exploring machine learning fundamentals through
-          educational projects.
-        </p>
-        <p>
-          All projects are created strictly for learning and demonstration
-          purposes.
-        </p>
-      </section>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div>
+          <h1>Hi, I’m <span>Uday Teja</span></h1>
+          <p id="typing"></p>
+        </div>
+        <img src="profile.jpeg" alt="Uday Teja" class="profile" />
+      </div>
+    </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I work with Python and have a solid grasp of machine learning
+        fundamentals, using libraries such as NumPy, Pandas, Matplotlib, and
+        Scikit-learn for data analysis and basic model building. I also have
+        front-end development experience and can build clean, responsive user
+        interfaces. I focus on writing understandable code, validating
+        assumptions, and improving through hands-on practice. I’m looking for a
+        role where I can contribute immediately at a foundational level while
+        continuing to grow through real-world problems.
+      </p>
+    </section>
 
-        <article class="card project">
-          <h3>Personal Portfolio Website</h3>
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>HTML, CSS, JavaScript</div>
+        <div>Flexbox, Responsive Design</div>
+        <div>Python,libraries: NumPy, Pandas,Matplotlib,seaborn ,joblib</div>
+        <div>Machine Learning Basics</div>
+        <div>Git, GitHub</div>
+        <div>AWS</div>
+        <div>SQL</div>
+        <div>docker</div>
+        <div>jenkins</div>
+      
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
           <p>
-            A responsive portfolio website built using core web technologies
-            to present projects and skills in a clear, structured manner.
+            Personal portfolio showcasing frontend skills, responsive layouts,
+            clean UI structure, and vanilla JavaScript interactions.
           </p>
-          <ul>
-            <li>Semantic HTML structure</li>
-            <li>Responsive layout using CSS</li>
-            <li>Basic interactivity using JavaScript</li>
-          </ul>
+          <a href="https://github.com/Udayteja10" target="_blank">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>Alzheimer disease detection</h3>
           <p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a> |
-            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+            predicts Alzheimer’s stage (0–1) from cleaned brain MRI images using
+            ML, provides prevention tips, and features an interactive UI for
+            easy, user-friendly insights
           </p>
-        </article>
+          <a
+            href="https://github.com/Udayteja10/alzheimer-disease-prediction-"
+            target="_blank"
+          >
+            View on GitHub →
+          </a>
+        </div>
 
-        <article class="card project">
-          <h3>Alzheimer’s Disease Prediction Demo</h3>
+        <div class="project-card">
+          <h3>medical chatbot</h3>
           <p>
-            An educational machine learning project exploring how
-            classification models can be trained using publicly available
-            Alzheimer’s datasets.
+         
           </p>
-          <ul>
-            <li>Data preprocessing using Python</li>
-            <li>Model training and evaluation</li>
-            <li>Focus on learning ML fundamentals</li>
-          </ul>
-          <p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Project Demo</a> |
-            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
-          </p>
-        </article>
+          <a
+            href="https://github.com/yourusername/frontend-dashboard"
+            target="_blank"
+          >
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+    </section>
 
-        <article class="card project">
-          <h3>Medical Information Chatbot</h3>
-          <p>
-            An educational chatbot designed to provide general medical
-            information using predefined data and basic NLP techniques.
-          </p>
-          <ul>
-            <li>Rule-based chatbot logic</li>
-            <li>Basic natural language processing concepts</li>
-            <li>Focus on safe, non-diagnostic information</li>
-          </ul>
-          <p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Project Demo</a> |
-            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
-          </p>
-        </article>
-      </section>
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
 
-      <section id="skills">
-        <h2>Technical Skills</h2>
+      <p>
+        <span id="email">udayteja513@example.com</span>
+        <button id="copyBtn">Copy</button>
+      </p>
 
-        <h3>Frontend</h3>
-        <ul class="skills">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript (DOM manipulation)</li>
-          <li>Git & GitHub</li>
-        </ul>
+      <div class="icons">
+        <a href="https://github.com/Udayteja10" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/uday-teja-53039128a/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </section>
 
-        <h3>Backend & Data (Foundational)</h3>
-        <ul class="skills">
-          <li>Python scripting and data handling</li>
-          <li>Machine learning fundamentals</li>
-          <li>Data analysis using Pandas</li>
-        </ul>
-      </section>
+    <footer>© 2026 Uday Teja</footer>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Email:
-          <a href="mailto:Udayteja513@gmail.com">Udayteja513@gmail.com</a>
-        </p>
-        <p>Location: Hyderabad, India</p>
-      </section>
-    </main>
-
-    <footer>
-      <p>© Uday Teja</p>
-    </footer>
-  </div>
-
-  <!-- JavaScript (loaded last, non-blocking) -->
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
